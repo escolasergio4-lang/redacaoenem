@@ -1,0 +1,35 @@
+Searching 8 files for "gemini-pro"
+
+~/dialetica-textual/app/page.tsx:
+   94          
+   95          // TENTATIVA 2: Modelo Pro (Clássico e estável)
+   96:         response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${geminiKey}`, {
+   97            method: "POST",
+   98            headers: { "Content-Type": "application/json" },
+
+1 match in 1 file
+
+
+Searching 8 files for "DialogContent"
+
+~/dialetica-textual/app/page.tsx:
+   11  import { Label } from "@/components/ui/label"
+   12  import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+   13: import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog"
+   14  import { BookOpen, Sparkles, Save, GraduationCap, Key, AlertCircle, Loader2, Send } from "lucide-react"
+   15  import { toast } from "sonner"
+   ..
+  172        {/* MODAL */}
+  173        <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+  174:         <DialogContent>
+  175            <DialogHeader><DialogTitle>
+  Configuração</DialogTitle> <DialogDescription>Ajuste as preferências da IA aqui.</DialogDescription></DialogHeader>
+  176            <div className="grid gap-4 py-4">
+  ...
+  185            </div>
+  186            <DialogFooter><Button onClick={handleSaveKeys}>Salvar</Button></DialogFooter>
+  187:         </DialogContent>
+  188        </Dialog>
+  189  
+
+3 matches in 1 file
